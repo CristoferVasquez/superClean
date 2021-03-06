@@ -34,11 +34,26 @@
     <meta charset="UTF-8">
     <title>Validador de RUT HTML5</title>
 </head>
-<body>
+<body data-spy="scroll"  >
+
+    <main class="container-fluid d-flex align-items-center justify-content-center alto-100">
+
+      <div class="row">
+
+        <div class="col-12 " name="Titulo">
+        <article class="card h-100 bg-transparent text-dark">
+          <div class="card-body">
+            <div class="d-flex">
+           <div class="fs-1 "><h1 >Los Cliners</h1> </div>
+            </div>
+          </div>
+        </article>
+        </div>
     <form>
         <input type="text" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT">
         <button type="submit">Validar RUT y Enviar Form</button>
 
     </form>
+</main>
 </body>
 </html>
