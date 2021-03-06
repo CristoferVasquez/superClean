@@ -1,17 +1,22 @@
 class cliente{
-    constructor(){
+    constructor(rut,dv){
+        this.rut = rut
+        this.dv = dv;
 
     }
+
+
 }
 
 class vehiculo{
-    constructor(){
-        
+    constructor(patente){
+        this.patente = patente;
     }
 }
 
 class venta{
-    constructor(){
-
+    constructor(vehiculo,cliente){
+        this.vehiculo = vehiculo;
+        this.cliente = cliente;
     }
 }
