@@ -1,0 +1,29 @@
+
+      <div class="row">
+       <div class="col-12 border"> <h1>Los Cliners </h1></div> 
+      </div>
+      <div class="row">
+        <div class="col-3 border">Cliente</div>
+        <div class="col-3 border">Vehiculo</div>
+        <div class="col-3 border">Servicio a entregar</div>
+        <div class="col-3 border">Encargado de servicio</div> 
+       </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 border">12</div> 
+        <div class="col-12 col-sm-6 col-md-4 border">12</div>
+        <div class="col-12 col-sm-6 col-md-4 border">12</div>
+        <div class="col-12 col-sm-6 col-md-4 border">12</div>
+        <div class="col-12 col-sm-12 col-md-4 border">12</div>      
+       </div>
+
+         <div class="row">
+        <div class="col-3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur provident obcaecati earum nam quod? Consectetur tempora praesentium veritatis, nihil minima laboriosam. Inventore praesentium rem doloribus quibusdam dicta, fuga assumenda corrupti?</p></div>
+        <div class="col-3 "><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sapiente doloremque possimus laudantium, fuga voluptatum nulla repellendus maiores ipsa aliquid voluptates, a aperiam. Ab, tenetur sint dicta perspiciatis et distinctio!</p></div>
+        <div class="col-3 "><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique labore inventore illum. Eligendi accusamus vitae quia rerum aperiam sint explicabo. Dolorem, minima perferendis. Quod illum, voluptatum blanditiis nobis fugit velit!</p></div>
+        <div class="col-3 "><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id reiciendis aperiam odio quibusdam nihil autem provident soluta quia fuga nostrum necessitatibus, magnam blanditiis? Provident sequi, accusantium pariatur animi repudiandae laboriosam.</p></div>
+      </div>
+
+          <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
