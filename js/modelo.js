@@ -1,10 +1,14 @@
 class cliente{
     constructor(rut,dv){
-        this.rut = rut
+        
         this.dv = dv;
+
 
     }
 
+    validarRut(){
+        
+    }
 
 }
 
