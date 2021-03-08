@@ -37,15 +37,7 @@
 
       <div class="row">
 
-        <div class="col-12 " name="Titulo">
-        <article class="card h-100 bg-transparent text-dark">
-          <div class="card-body">
-            <div class="d-flex">
-           <div class="fs-1 "><h1 >Los Cliners</h1> </div>
-            </div>
-          </div>
-        </article>
-        </div>
+
 
         <div class="col-6 ">
         <article class="card h-100  bg-transparent text-dark">
@@ -57,55 +49,6 @@
         </article>
         </div>
      
-        <div class="col-6">
-        <article class="card h-100 bg-transparent text-dark">
-          <div class="card-body">
-            <div class="d-flex">
-              <div class="fs-6">Datos del encargado y servicios</div>
-            </div>
-          </div>
-        </article>
-        </div>
-
-        <div class="col-3 ">
-        <article class="card h-100 bg-transparent text-dark">
-        <div class="card-body">
-          <div class="d-flex">
-            <div class="fs-7">Datos de cliente</div> 
-          </div>
-        </div>
-        </article>
-        </div>
-
-        <div class="col-3">  
-        <article class="card h-100 bg-transparent text-dark">
-        <div class="card-body">
-          <div class="d-flex">
-            <div class="fs-7">Datos de vehiculo</div>
-          </div>
-        </div>
-        </article>
-        </div>
-
-        <div class="col-3">  
-        <article class="card h-100 bg-transparent text-dark">
-        <div class="card-body">
-          <div class="d-flex">
-            <div class="fs-7">Datos de encargado</div>
-          </div>
-        </div>
-        </article>
-        </div>
-
-        <div class="col-3 ">   
-        <article class="card bg-transparent text-dark">
-        <div class="card-body">
-          <div class="d-flex">
-            <div class="fs-7">Servicios</div>
-          </div>
-        </div>
-        </article>
-        </div>
 
               <div class="col-3" name="cliente">   
                 <article class="card bg-transparent text-dark">
@@ -115,15 +58,15 @@
                           <div class="col-12">
                             <p>RUT</p>
                             <div class="row">
-                              <div class="col-7">
-                                <input type="text" class="form-control" placeholder="Rut">
-                              </div>  
-                              <div class="col-4">
-                                <input type="text" class="form-control" placeholder="DV">
-                              </div>  
+                              <div class="col-12" name="divCliente">
+                                <form>
+                                   <input type="text" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT">
+                                   <button type="submit">Validar RUT y Enviar Form</button>
+                               </form>
+                              </div>
                             </div>                          
                           </div> 
-                       
+                          <div class="col-12"><p><h1>Nombre y Apellido</h1></p></div>
                           <div class="col-12">
                             <p></p>
                             <div class="col-12">
@@ -162,7 +105,7 @@
                 </article>
               </div>
 
-              <div class="col-3 " name="vehiculo">   
+              <div class="col-12 " name="vehiculo">   
                 <article class="card bg-transparent text-dark">
                   <div class="card-body">
                     <div class="d-flex">
@@ -216,7 +159,7 @@
                 </article>
               </div>
               
-              <div class="col-3" name="encargado">   
+              <div class="col-12" name="encargado">   
                 <article class="card bg-transparent text-dark">
                     <div class="card-body">
                       <div class="d-flex">
@@ -237,7 +180,7 @@
                 </article>
               </div>
 
-              <div class="col-3" name="servicios">   
+              <div class="col-12" name="servicios">   
                 <article class="card bg-transparent text-dark">
                     <div class="card-body">
                       <div class="d-flex">
