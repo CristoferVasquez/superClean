@@ -8,12 +8,6 @@
     <script type="text/javascript" href="js/bootstrap.min.js"></script>
     <style>
 
-    @media (min-width: 992px) { 
-    .alto-100{
-    height: 100vh;
-    }
-  }
-
     @font-face {
     font-family: "TitilliumWeb";
     src: url("/assets/Fuente/TitilliumWeb-Bold.ttf");
@@ -27,188 +21,117 @@
     <meta charset="UTF-8">
     <title>SuperClean</title>
 </head>
-<body data-spy="scroll"  >
+
+
+  <body data-spy="scroll"  >
 
     <main class="container-fluid d-flex align-items-center justify-content-center alto-100">
-
+      
       <div class="row">
-        <div class="col-12 " name="Titulo">
+
         <article class="card h-100 bg-transparent text-dark">
-          <div class="card-body">
-            <div class="d-flex">
-           <div class="fs-1 "><h1 >SuperClean</h1> </div>
-            </div>
-          </div>
+        <div class="col-12"><h1>SuperClean</h1>
+        </div>
+
         </article>
-      </div>
-      <div class="col-4"><p>Cliente</p></div>
-      <div class="col-4">Automovil</div>
-      <div class="col-4">Datos de venta</div>     
-        
-          <div class="col-4" name="divCliente">
-            <article class="card h-100 bg-transparent text-dark">
-              <div class="card-body">
-                <div class="d-flex">
-               <div class="fs-1 ">
-                <form class="row g-3">
-                  <div class="col-md-12">
-                    <label for="inputEmail4" class="form-label">RUT</label>
-                    <input type="text" class="form-control" id="rut">
-                  </div>
-                  <div class="col-6">
-                    <label for="inputAddress" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                  </div>
-                  <div class="col-6">
-                    <label for="inputAddress2" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="inputCity" class="form-label">City</label>
-                    <input type="text" class="form-control" id="inputCity">
-                  </div>
-                  <div class="col-md-4">
-                    <label for="inputState" class="form-label">State</label>
-                    <select id="inputState" class="form-select">
-                      <option selected>Choose...</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                  <div class="col-md-2">
-                    <label for="inputZip" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
-                  </div>
-                 
-               
-                </form>
-               </div>
-                </div>
-              </div>
-            </article>
-         </div>
 
-
-         <div class="col-4" name="divVehiculo">
-          <article class="card h-100 bg-transparent text-dark">
-            <div class="card-body">
-              <div class="d-flex">
-             <div class="fs-1 ">
-              <form class="row g-3">
-                <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputPassword4" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="inputPassword4">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress" class="form-label">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress2" class="form-label">Address 2</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputCity" class="form-label">City</label>
-                  <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="col-md-4">
-                  <label for="inputState" class="form-label">State</label>
-                  <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="col-md-2">
-                  <label for="inputZip" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="inputZip">
-                </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Check me out
-                    </label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary">Sign in</button>
-                </div>
-              </form>
-             </div>
-              </div>
-            </div>
-          </article>
-       </div>
-
-
-       <div class="col-4" name="divVenta">
-        <article class="card h-100 bg-transparent text-dark">
-          <div class="card-body">
-            <div class="d-flex">
-           <div class="fs-1 ">
-            <form class="row g-3">
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
-              </div>
-              <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4">
-              </div>
-              <div class="col-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-              </div>
-              <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-              </div>
-              <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>
-              <div class="col-md-4">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select">
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
-              </div>
-              <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-              </div>
-              <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    Check me out
-                  </label>
-                </div>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-primary">Sign in</button>
-              </div>
-            </form>
-           </div>
-            </div>
-          </div>
-        </article>
-     </div>
-        <div class="row">
-
-         <div class="col-12">
+        <article class="card h-100 bg-transparent text-dark" id="cliente">
           <div class="col-12">
-            <button class="btn btn-primary btn-lg btn-block" type="button" onclick="verificar()">Generar Orden</button>
+            <div class="row">
+              <col-12><p></p></col-12>
+            </div>
+            <col-12>Datos de cliente</col-12>
+            <div class="row">
+              <col-12><p></p></col-12>
+            </div>
+            <div class="row">
+              <div class="col-3">Ingrese su rut
+                
+                
+                <div class="col-9"> 
+                  <input type="text" class="form-control" placeholder="xxxxxxxx-x">
+                </div>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="Nombre">
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="Apellido">
+              </div>
+            </div>
+            <div class="row">
+              <col-12><p></p></col-12>
+            </div>
+            <div class="row">
+              <div class="col-3"></div><div class="col-3"> 
+                <input type="text" class="form-control" placeholder="Direccion">
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="Comuna">
+              </div>
+              
+            </div>
           </div>
-         </div>
+          <div class="row">
+            <col-12><p></p></col-12>
+          </div>
+        </article>
+      
 
-        </div>
+        <article class="card h-100 bg-transparent text-dark" id="vehiculo">
+          <div class="col-12">
+            <div class="row">
+              <col-12><p></p></col-12>
+            </div>
+            <div class="row">
+              <div class="col-3">rut</div><div class="col-3"> 
+                <input type="text" class="form-control" placeholder="xxxxxxxx-x">
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="Nombre">
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="apellido">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">hpla2</div>
+            </div>
+          </div>
+          <div class="row">
+            <col-12><p></p></col-12>
+          </div>
+        </article>
 
-        </div>
-</main>
-</body>
+        <article class="card h-100 bg-transparent text-dark"id="venta">
+          <div class="col-12">
+            <div class="row">
+              <col-12><p></p></col-12>
+            </div>
+            <div class="row">
+              <div class="col-3">rut</div><div class="col-3"> 
+                <input type="text" class="form-control" placeholder="xxxxxxxx-x">
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="Nombre">
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="apellido">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">hpla2</div>
+            </div>
+          </div>
+          <div class="row">
+            <col-12><p></p></col-12>
+          </div>
+        </article>
+
+      </div>
+        
+    </main>
+
+  </body>
+
 </html>
