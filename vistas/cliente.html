@@ -35,259 +35,50 @@
 
     <main class="container-fluid d-flex align-items-center justify-content-center alto-100">
 
-      <div class="row">
-
-        <div class="col-12 " name="Titulo">
-        <article class="card h-100 bg-transparent text-dark">
-          <div class="card-body">
-            <div class="d-flex">
-           <div class="fs-1 "><h1 >Los Cliners</h1> </div>
-            </div>
-          </div>
-        </article>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
         </div>
-
-        <div class="col-6 ">
-        <article class="card h-100  bg-transparent text-dark">
-          <div class="card-body ">
-            <div class="d-flex">
-            <div class="fs-6">Datos del cliente y vehiculo</div>
-            </div>
-          </div>
-        </article>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
         </div>
-     
-        <div class="col-6">
-        <article class="card h-100 bg-transparent text-dark">
-          <div class="card-body">
-            <div class="d-flex">
-              <div class="fs-6">Datos del encargado y servicios</div>
-            </div>
-          </div>
-        </article>
-        </div>
-
-        <div class="col-3 ">
-        <article class="card h-100 bg-transparent text-dark">
-        <div class="card-body">
-          <div class="d-flex">
-            <div class="fs-7">Datos de cliente</div> 
-          </div>
-        </div>
-        </article>
-        </div>
-
-        <div class="col-3">  
-        <article class="card h-100 bg-transparent text-dark">
-        <div class="card-body">
-          <div class="d-flex">
-            <div class="fs-7">Datos de vehiculo</div>
-          </div>
-        </div>
-        </article>
-        </div>
-
-        <div class="col-3">  
-        <article class="card h-100 bg-transparent text-dark">
-        <div class="card-body">
-          <div class="d-flex">
-            <div class="fs-7">Datos de encargado</div>
-          </div>
-        </div>
-        </article>
-        </div>
-
-        <div class="col-3 ">   
-        <article class="card bg-transparent text-dark">
-        <div class="card-body">
-          <div class="d-flex">
-            <div class="fs-7">Servicios</div>
-          </div>
-        </div>
-        </article>
-        </div>
-
-              <div class="col-3" name="cliente">   
-                <article class="card bg-transparent text-dark">
-                    <div class="card-body">
-                      <div class="d-flex">
-                        <div class="row">
-                          <div class="col-12">
-                            <p>RUT</p>
-                            <div class="row">
-                              <div class="col-7">
-                                <input type="text" class="form-control" placeholder="Rut">
-                              </div>  
-                              <div class="col-4">
-                                <input type="text" class="form-control" placeholder="DV">
-                              </div>  
-                            </div>                          
-                          </div> 
-                       
-                          <div class="col-12">
-                            <p></p>
-                            <div class="col-12">
-                              <input type="text" class="form-control" placeholder="Nombre">
-                            </div>  
-                          </div> 
-                          <div class="col-12">
-                            <p></p>
-                            <div class="col-12">
-                              <input type="text" class="form-control" placeholder="Apellido">
-                            </div>  
-                          </div> 
-                          <div class="col-12">
-                            <p></p>
-                            <p>Fecha de nacimiento</p>
-                            <div class="col-12">
-                              <input type="text" class="form-control" placeholder="DD-MM-AAAA">
-                            </div>  
-                          </div> 
-                          <div class="col-12">
-                            <p></p>
-                            <p>Direccion</p>
-                            <div class="col-12">
-                              <input type="text" class="form-control" placeholder="Direccion">
-                            </div>  
-                            <p></p>
-                            <div class="col-12">
-                              <input type="text" class="form-control" placeholder="Comuna">
-                            </div>  
-                            
-                          </div> 
-                        </div>
-                
-                      </div>
-                    </div>
-                </article>
-              </div>
-
-              <div class="col-3 " name="vehiculo">   
-                <article class="card bg-transparent text-dark">
-                  <div class="card-body">
-                    <div class="d-flex">
-
-                    <div class="row">
-                      <div class="col-12">
-                        <select class="form-control ">
-                        <option>Seleccione tipo vehiculo </option>
-                        <option>Furgón</option>
-                        <option>Automóvil</option>
-                        <option>Camión</option>
-                        <option>Camioneta </option>
-                        <option>Moto</option>
-                        </select>
-                      </div>  
-                      
-                        <div class="col-12">
-                            <p></p>
-                            <div class="col-12">
-                              <input type="text" class="form-control" placeholder="Marca">
-                            </div>  
-                          </div> 
-                                
-                        <div class="col-12">
-                          <p></p>
-                          <div class="col-12">
-                            <input type="text" class="form-control" placeholder="Modelo">
-                          </div>  
-                        </div> 
-                              
-                        <div class="col-12">
-                          <p></p>
-                          <div class="col-12">
-                            <input type="text" class="form-control" placeholder="Año de vehiculo">
-                          </div>  
-                        </div> 
-
-                        <div class="col-12">
-                          <p></p>
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" value="">
-                              Revision Tecnica al dia
-                            </label>
-                          </div>
-                        </div> 
-
-                     </div>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              
-              <div class="col-3" name="encargado">   
-                <article class="card bg-transparent text-dark">
-                    <div class="card-body">
-                      <div class="d-flex">
-                        <div class="row">
-                          <div class="col-12">
-                            <select class="form-control ">
-                            <option>Seleccione encargado </option>
-                            <option>Yefri Segovia</option>
-                            <option>Cristian Smith</option>
-                            <option>Gabriel cienfuentes</option>
-                            <option>Cristofer Vasquez </option>
-                            <option>No existe</option>
-                            </select>
-                          </div>                         
-                        </div>
-                      </div>
-                    </div>
-                </article>
-              </div>
-
-              <div class="col-3" name="servicios">   
-                <article class="card bg-transparent text-dark">
-                    <div class="card-body">
-                      <div class="d-flex">
-                        <div class="row">
-                          <div class="col-12">
-                            <div class="radio">
-                              <label>
-                                <input type="radio" name="opciones" id="opciones_1" value="opcion_1" checked>
-                                Lavado exterior
-                              </label>
-                            </div>
-                            <div class="radio">
-                              <label>
-                                <input type="radio" name="opciones" id="opciones_2" value="opcion_2">
-                                Lavado de motor
-                              </label>
-                            </div>
-                            <div class="radio">
-                              <label>
-                                <input type="radio" name="opciones" id="opciones_2" value="opcion_2">
-                                Servicio completo
-                              </label>
-                            </div>
-                            <div class="col-12">
-                              <p>-------------------------</p>
-                              <p>Registrar Fecha Servicio</p>
-                              <div class="col-12">
-                                <input type="text" class="form-control" placeholder="DD-MM-AAAA">
-                              </div>  
-                            </div> 
-                            <div class="col-12">
-                              <p>Registrar Hora Servicio</p>
-                              <div class="col-12">
-                                <input type="text" class="form-control" placeholder="HH:MM">
-                              </div>  
-                          </div>                         
-                        </div>
-                      </div>
-                    </div>
-                </article>
-              </div>
-
-              <div class="col12"><p></p></div>
         <div class="col-12">
-        <div class="d-grid gap-2">
-          <button class="btn btn-primary" type="button">Generar Orden</button>
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
         </div>
-   
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
         </div>
-      </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
 
       
 
