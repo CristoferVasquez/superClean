@@ -32,7 +32,7 @@
     <script src="js/bootstrap.js"></script>
     
     <meta charset="UTF-8">
-    <title>Validador de RUT HTML5</title>
+    <title>Los Cliners</title>
 </head>
 <body data-spy="scroll"  >
 
@@ -49,15 +49,14 @@
           </div>
         </article>
         </div>
-
+        <div class="col-12" name="divCliente">
+          <form>
+             <input type="text" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT">
+             <button type="submit">Validar RUT y Enviar Form</button>
+     
+         </form>
         </div>
-        <div class="row">
-          <div class="col-12" name="divCliente">
-            <form>
-               <input type="text" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT">
-               <button type="submit">Validar RUT y Enviar Form</button>
-       
-           </form>
+   
         </div>
 
 </main>
