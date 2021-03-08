@@ -1,13 +1,14 @@
 class cliente{
-    constructor(rut,dv){
+    constructor(){
         
-        this.dv = dv;
-
-
     }
 
     validarRut(){
-        
+       let rut = document.getElementById('rut');
+       alert( Fn.validaRut(rut) ? 'Valido' : 'inválido');
+
+
+
     }
 
 }
