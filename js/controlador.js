@@ -1,5 +1,5 @@
 var Fn = {
-	// Valida el rut con su cadena completa "XXXXXXXX-X"
+	
 	validaRut : function (rutCompleto) {
 		if (!/^[0-9]+[-|‐]{1}[0-9kK]{1}$/.test( rutCompleto ))
 			return false;
@@ -17,6 +17,4 @@ var Fn = {
 	}
 }
 
-// Uso de la función
-alert( Fn.validaRut('11111111-1') ? 'Valido' : 'inválido');
 
