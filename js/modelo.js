@@ -1,25 +1,23 @@
-class cliente{
-    constructor(){
-        
+class Cliente{
+    constructor(){      
     }
 
-    validarRut(){
+    validarCliente(){
        let rut = document.getElementById('rut');
-       alert( Fn.validaRut(rut) ? 'Valido' : 'inválido');
+       let validar =  Fn.validaRut(rut) ? true : false;
 
-
-
+       return(validar)
     }
 
 }
 
-class vehiculo{
+class Vehiculo{
     constructor(patente){
         this.patente = patente;
     }
 }
 
-class venta{
+class Venta{
     constructor(vehiculo,cliente){
         this.vehiculo = vehiculo;
         this.cliente = cliente;
