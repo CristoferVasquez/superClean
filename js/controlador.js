@@ -12,24 +12,10 @@ function crearClientes(){
     let res = c.validarRutCliente();
     let res2 = c.validarText();
 
-    if (c.rut.length == 0) {
-        
-        rut.setCustomValidity("Favor ingrese su rut"); return false;
+   if (res2 == true) {
+    rut.setCustomValidity("Nombre correcto"); return true;
        
-    }else{
-        if (res == true) {
-            rut.setCustomValidity("RUT valido"); return true; 
-        }else{
-        rut.setCustomValidity("RUT Inválido"); return false; 
-        }
-    }
-    
-    
-
-
-    if (condition) {
-        
-    }
+   }
 
     
 
