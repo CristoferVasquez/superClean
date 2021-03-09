@@ -26,6 +26,7 @@ class Cliente{
        
        let validar =  Fn.validaRut(this.rut) ? true : false;
 
+       
        return(validar)
             
     }
@@ -33,8 +34,8 @@ class Cliente{
     validarText(txt){
         var txt = txt;
         var regxNom = new RegExp('^[A-Z]+$', 'i')
-        var valNom = regxNom.test(nombre)
-        if (nombre.length == 0 || nombre.length >50 || !valNom) {
+        var valNom = regxNom.test(txt)
+        if (txt.length == 0 || txt.length >50 || !valNom) {
           alert("El nombre indicado es incorrecto!");
           document.formularioContacto.nombre.focus();
           return false;
