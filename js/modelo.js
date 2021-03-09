@@ -42,17 +42,6 @@ class Cliente{
         }
     }
 
-    validarDire(direccion){
-
-        var txt = direccion;
-        var regxNom = new RegExp('^[A-Z]+$', 'i')
-        var valNom = regxNom.test(nombre)
-        if (nombre.length == 0 || nombre.length >100 || !valNom) {
-          alert("El nombre indicado es incorrecto!");
-          document.formularioContacto.nombre.focus();
-          return false;
-        }
-
 }
 
 class Vehiculo{
