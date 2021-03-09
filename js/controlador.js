@@ -1,13 +1,12 @@
-var flag = new Cliente();
-/*c.nombre = document.getElementById('nombre').value
-c.apellido = document.getElementById('apellido').value
-c.direccion = document.getElementById('direccion').value
-*/
+
 function verificar(){
     var flag = new Cliente();
    try {
 
     flag.rut = document.getElementById('rut').value
+    flag.nombre = document.getElementById('nombre').value
+    flag.apellido = document.getElementById('apellido').value
+    flag.direccion = document.getElementById('direccion').value
 
 
     if (flag.rut.length != 0) {
