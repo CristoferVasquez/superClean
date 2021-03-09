@@ -12,10 +12,11 @@ function verificar(){
                 rut.setCustomValidity("RUT valido"); return true; 
             }else{
             rut.setCustomValidity("RUT Inválido"); return false; 
-            alert(res+c.rut);}
+            }
         }else{
             alert("ingrese rut");
         }
+        alert(res+c.rut);
       /*  c.nombre = document.getElementById('nombre').value;
         c.apellido = document.getElementById('apellido').value;
         c.direccion = document.getElementById('direccion').value
