@@ -3,10 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script type="text/javascript" href="js/modelo.js"></script>
-    <script type="text/javascript" href="js/controlador.js"></script>
-    <script type="text/javascript" href="js/bootstrap.js"></script>
-    <script type="text/javascript" href="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/controlador.js"></script>
+    <script type="text/javascript" src="js/modelo.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+    
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <style>
 
@@ -27,6 +30,7 @@
 
     <main class="container-fluid d-flex align-items-center justify-content-center alto-100">
 
+      <form>
       
       <div class="row">
         <div class="page-header p-3 mb-2 bg-dark text-white">
@@ -180,15 +184,15 @@
             </div>
             <div class="col-12">
               <div class="d-grid gap-2">
-              <button class="btn btn-primary"  type="submit" onclick="imprimir()">Comprobar y generar venta</button>
-              
-              <input type="button" onclick="imprimir()"/>;
+              <button class="btn btn-primary" type="submit" onclick="verificar()">Comprobar y generar venta</button>
+                <input type="button" value="Boton" onclick="imprimir()">  
               </div>
             </div>
           </div>
         </article>
 
       </div>
+    </form>
     </main>
 
   </body>
