@@ -27,8 +27,7 @@ class Cliente{
        let validar =  Fn.validaRut(this.rut) ? true : false;
 
        return(validar)
-
-       
+            
     }
 
     validarText(txt){
