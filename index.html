@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <script type="text/javascript" href="js/bootstrap.min.js"></script>
     <style>
 
     @font-face {
@@ -17,6 +16,7 @@
     <script type="text/javascript" href="js/controlador.js"></script>
     <script type="text/javascript" href="js/modelo.js"></script>
     <script type="text/javascript" href="js/bootstrap.js"></script>
+    <script type="text/javascript" href="js/bootstrap.min.js"></script>
     
     <meta charset="UTF-8">
     <title>SuperClean</title>
@@ -24,7 +24,7 @@
 
 
   <body data-spy="scroll"  >
-
+    <form >
     <main class="container-fluid d-flex align-items-center justify-content-center alto-100">
 
       
@@ -34,8 +34,6 @@
           
         </div>
 
-
-        <article class="card h-100 bg-transparent text-dark" id="cliente">
           <div class="col-12">
             <div class="row">
               <col-12><p>Datos de Cliente</p></col-12>
@@ -74,7 +72,6 @@
           <div class="row">
             <col-12><p></p></col-12>
           </div>
-        </article>
       
 
         <article class="card h-100 bg-transparent text-dark" id="vehiculo">
@@ -175,19 +172,20 @@
             <div class="col-12"><p></p></div>
           </div>
           <div class="row">
-            <col-12> <div class="col-12">
+             <div class="col-12">
+             
+            </div>
+            <div class="col-12">
               <div class="d-grid gap-2">
-                <button class="btn btn-primary" onclick="verificar()" type="button">Comprobar y generar venta</button>
+                <button class="btn btn-primary"  type="submit" onclick="verificar()">Comprobar y generar venta</button>
               </div>
-
-            </div></col-12>
+            </div>
           </div>
         </article>
 
       </div>
-        
     </main>
-
+  </form>
   </body>
 
 </html>
