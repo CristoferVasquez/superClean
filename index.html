@@ -14,9 +14,9 @@
 }
 
 </style>
-    <script src="js/controlador.js"></script>
-    <script src="js/modelo.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" href="js/controlador.js"></script>
+    <script type="text/javascript" href="js/modelo.js"></script>
+    <script type="text/javascript" href="js/bootstrap.js"></script>
     
     <meta charset="UTF-8">
     <title>SuperClean</title>
@@ -47,14 +47,14 @@
               <div class="col-4">
                 Ingrese su rut                
                 <div class="col-9"> 
-                  <input type="text" class="form-control" placeholder="xxxxxxxx-x">
+                  <input type="text" class="form-control" id="rut" placeholder="xxxxxxxx-x">
                 </div>
               </div>
               <div class="col-4">
-                <input type="text" class="form-control" placeholder="Nombre">
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
               </div>
               <div class="col-4">
-                <input type="text" class="form-control" placeholder="Apellido">
+                <input type="text" class="form-control" id="apellido" placeholder="Apellido">
               </div>
             </div>
             <div class="row">
@@ -180,8 +180,9 @@
           <div class="row">
             <col-12> <div class="col-12">
               <div class="d-grid gap-2">
-                <button class="btn btn-primary" type="button">Comprobar y generar venta</button>
-               </div>
+                <button class="btn btn-primary" onclick="verificar()" type="button">Comprobar y generar venta</button>
+              </div>
+
             </div></col-12>
           </div>
         </article>
