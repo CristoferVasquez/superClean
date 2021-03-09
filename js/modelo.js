@@ -31,14 +31,14 @@ class Cliente{
             
     }
 
-    validarText(txt){
-        var txt = txt;
+    validarText(){
+        var txt = this.nombre;
         var regxNom = new RegExp('^[A-Z]+$', 'i')
         var valNom = regxNom.test(txt)
-        if (txt.length == 0 || txt.length >50 || !valNom) {
-          alert("El nombre indicado es incorrecto!");
-          document.formularioContacto.nombre.focus();
+        if (txt.length == 0 || nombre.length >50 || !valNom) {
           return false;
+        }else{
+            return true;
         }
     }
 
