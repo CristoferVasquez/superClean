@@ -26,22 +26,15 @@ class Cliente{
        
        let validar =  Fn.validaRut(this.rut) ? true : false;
 
-       return(validar)     
-    }
-
-    validarText(txt){
-        var txt = txt;
-        var regxNom = new RegExp('^[A-Z]+$', 'i')
-        var valNom = regxNom.test(txt)
-        if (txt.length == 0 || txt.length >50 || !valNom) {
+      return validar;
           
-          return false;
-        }else{
-            return true;
-        }
     }
 
-}
+
+    
+    }
+
+
 
 class Vehiculo{
     constructor(patente){
