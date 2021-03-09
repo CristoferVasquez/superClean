@@ -37,24 +37,22 @@
         <article class="card h-100 bg-transparent text-dark" id="cliente">
           <div class="col-12">
             <div class="row">
-              <col-12><p></p></col-12>
-            </div>
-            <col-12>Datos de cliente</col-12>
-            <div class="row">
-              <col-12><p></p></col-12>
+              <col-12><p>Datos de Cliente</p></col-12>
             </div>
             <div class="row">
-              <div class="col-3">Ingrese su rut
-                
-                
+              <col-12><p></p></col-12>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                Ingrese su rut                
                 <div class="col-9"> 
                   <input type="text" class="form-control" placeholder="xxxxxxxx-x">
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-4">
                 <input type="text" class="form-control" placeholder="Nombre">
               </div>
-              <div class="col-3">
+              <div class="col-4">
                 <input type="text" class="form-control" placeholder="Apellido">
               </div>
             </div>
@@ -62,10 +60,11 @@
               <col-12><p></p></col-12>
             </div>
             <div class="row">
-              <div class="col-3"></div><div class="col-3"> 
+              <div class="col-4"></div>
+              <div class="col-4"> 
                 <input type="text" class="form-control" placeholder="Direccion">
               </div>
-              <div class="col-3">
+              <div class="col-4">
                 <input type="text" class="form-control" placeholder="Comuna">
               </div>
               
@@ -83,10 +82,11 @@
               <col-12><p></p></col-12>
             </div>
             <div class="row">
-              <div class="col-3">Datos del vehiculo</div>
-              <div class="col-3">
+              <div class="col-12">Datos del vehiculo</div>
+              <div class="col-12"><p></p></div>
+              <div class="col-4">
                 <label for="tipoVehiculo">Tipo de Vehiculo</label>
-                <select id="inputState" class="form-control">
+                <select id="tipoVehiculo" class="form-control">
                   <option selected>Eliga una opcion</option>
                   <option value="1">Furgón</option>
                   <option value="2">Automóvil</option>
@@ -95,34 +95,30 @@
                   <option value="6">Moto</option>
                 </select> 
                 </div>
-              
-            <div class="col-3">
-            </div>
-              <div class="col-3">
-               </div>
-              <div class="col-3">
-             </div>
+
              <div class="col-12"><p></p></div>
-             <div class="col-3">
-            </div>
-              <div class="col-3">
+           
+              <div class="col-6">
                 <input type="text" class="form-control" id="marca" placeholder="Marca">
               </div>
-              <div class="col-3">
+              <div class="col-6">
                 <input type="text" class="form-control" id="modelo"placeholder="Modelo">
               </div>  
-              <div class="col-3">
-                
-              </div>
+            
               <div class="col-12"><p></p></div>
-              <div class="col-3">
-              </div>
+            
               
               <div class="col-3">
                 <input type="text" class="form-control" placeholder="Año">
               </div>         
-              <div class="col-3">
-                <input type="text" class="form-control" placeholder="Nombre">
+              <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="1" id="revTecnica">
+                  <label class="form-check-label" for="revTecnica">
+                    Revision Tecnica al día
+                  </label>
+                </div>
+                
               </div>  
                       
             </div>
@@ -142,7 +138,8 @@
               <col-12><p></p></col-12>
             </div>
             <div class="row">
-              <div class="col-3">Datos de la venta</div><div class="col-3"> 
+              <div class="col-12">Datos de la venta</div>
+              <div class="col-3"> 
                 <input type="text" class="form-control" placeholder="xxxxxxxx-x">
               </div>
               <div class="col-3">
@@ -157,7 +154,14 @@
             </div>
           </div>
           <div class="row">
-            <col-12><p></p></col-12>
+            <div class="col-12"><p></p></div>
+          </div>
+          <div class="row">
+            <col-12> <div class="col-12">
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="button">Comprobar y generar venta</button>
+               </div>
+            </div></col-12>
           </div>
         </article>
 
