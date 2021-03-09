@@ -1,10 +1,10 @@
 class Cliente{
     constructor(){
-        this.rut = document.getElementById('rut').value;
-       /* this.nombre = document.getElementById('nombre').value;
+        this.rut = document.getElementById('rut').value;/*
+        this.nombre = document.getElementById('nombre').value;
         this.apellido = document.getElementById('apellido').value;
         this.direccion = document.getElementById('direccion').value;
-        this.comuna = document.getElementById('comuna').value;     */ 
+        this.comuna = document.getElementById('comuna').value; */      
     }
 
     validarRutCliente(){
