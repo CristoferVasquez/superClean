@@ -1,3 +1,10 @@
+function imprimir(){
+
+    alert("estoy imprimiendo")
+}
+
+
+
 function verificar(){
 
     let c = new Cliente();
@@ -12,10 +19,5 @@ function verificar(){
 
 
 
-}
-
-function imprimir(){
-
-    alert("estoy imprimiendo")
 }
 
