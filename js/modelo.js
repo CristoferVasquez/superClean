@@ -31,8 +31,8 @@ class Cliente{
             
     }
 
-    validarText(){
-        var txt = this.nombre;
+    validarText(txt){
+        var txt = txt;
         var regxNom = new RegExp('^[A-Z]+$', 'i')
         var valNom = regxNom.test(txt)
         if (txt.length == 0 || nombre.length >50 || !valNom) {
