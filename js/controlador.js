@@ -1,17 +1,17 @@
-
-
+var flag = new Cliente();
+/*c.nombre = document.getElementById('nombre').value
+c.apellido = document.getElementById('apellido').value
+c.direccion = document.getElementById('direccion').value
+*/
 function verificar(){
-
-    let c = new Cliente();
+    var flag = new Cliente();
    try {
 
-    c.rut = document.getElementById('rut').value
-    c.nombre = document.getElementById('nombre').value
-    c.apellido = document.getElementById('apellido').value
-    c.direccion = document.getElementById('direccion').value
+    flag.rut = document.getElementById('rut').value
 
-    if (c.rut.length != 0) {
-        let res = c.validarRutCliente();
+
+    if (flag.rut.length != 0) {
+        let res = flag.validarRutCliente();
         if (res == true) {
             rut.setCustomValidity("RUT valido"); return true
         }else{
@@ -21,9 +21,7 @@ function verificar(){
         rut.setCustomValidity("Favor ingrese su rut"); return false
     }
 
-    if (condition) {
-        
-    }
+
     
 
    } catch (error) {
