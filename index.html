@@ -29,8 +29,9 @@
 
       
       <div class="row">
-        <div class="page-header">
+        <div class="page-header p-3 mb-2 bg-dark text-white">
           <h1>SuperClean <small>Proceso de pago</small></h1>
+          
         </div>
 
 
@@ -152,7 +153,18 @@
                 </select> 
                 </div>
               <div class="col-4">
-                <input type="text" class="form-control" placeholder="Nombre">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="1" id="labBasico">
+                  <label class="form-check-label" for="revTecnica">
+                    Lavado Basico ($5000)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="2" id="labProfundo">
+                  <label class="form-check-label" for="revTecnica">
+                    Lavado Profundo ($8000)
+                  </label>
+                </div>
               </div>
               <div class="col-4">
                 <input type="text" class="form-control" placeholder="apellido">
