@@ -7,7 +7,7 @@
     <script type="text/javascript" src="js/modelo.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
 
     
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -30,7 +30,7 @@
 
     <main class="container-fluid d-flex align-items-center justify-content-center alto-100">
 
-      <form>
+      <form method="post" id="formulario-pago" role="form" autocomplete="off">
       
       <div class="row">
         <div class="page-header p-3 mb-2 bg-dark text-white">
@@ -51,14 +51,14 @@
               <div class="col-4">
                 Ingrese su rut                
                 <div class="col-12"> 
-                  <input type="text" class="form-control" id="rut" placeholder="xxxxxxxx-x">
+                  <input type="text" class="form-control" name="rut" id="rut" placeholder="xxxxxxxx-x">
                 </div>
               </div>
               <div class="col-4">
-                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
               </div>
               <div class="col-4">
-                <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido">
               </div>
             </div>
             <div class="row">
