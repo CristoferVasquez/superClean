@@ -1,8 +1,3 @@
-function imprimir(){
-
-    alert("estoy imprimiendo")
-}
-
 
 
 function verificar(){
@@ -20,4 +15,11 @@ function verificar(){
 
 
 }
+
+function imprimir(){
+
+    alert("estoy imprimiendo")
+}
+
+
 
