@@ -5,10 +5,14 @@ function verificar(){
     let c = new Cliente();
    
         c.rut = document.getElementById('rut').value;
-        
+
         if (c.rut.length != 0) {
             let res = c.validarRutCliente();
-            alert(res+c.rut);
+            if (res == true) {
+                rut.setCustomValidity("RUT valido"); return true; 
+            }else{
+            rut.setCustomValidity("RUT Inválido"); return false; 
+            alert(res+c.rut);}
         }else{
             alert("ingrese rut");
         }
