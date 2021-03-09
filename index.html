@@ -24,7 +24,7 @@
 
 
   <body data-spy="scroll"  >
-    <form >
+
     <main class="container-fluid d-flex align-items-center justify-content-center alto-100">
 
       
@@ -34,6 +34,8 @@
           
         </div>
 
+
+        <article class="card h-100 bg-transparent text-dark" id="cliente">
           <div class="col-12">
             <div class="row">
               <col-12><p>Datos de Cliente</p></col-12>
@@ -72,6 +74,7 @@
           <div class="row">
             <col-12><p></p></col-12>
           </div>
+        </article>
       
 
         <article class="card h-100 bg-transparent text-dark" id="vehiculo">
@@ -177,7 +180,9 @@
             </div>
             <div class="col-12">
               <div class="d-grid gap-2">
-                <button class="btn btn-primary"  type="submit" onclick="verificar()">Comprobar y generar venta</button>
+                <button class="btn btn-primary"  type="submit" onclick="imprimir()">Comprobar y generar venta</button>
+              
+              <input type="button" onclick="imprimir()">;
               </div>
             </div>
           </div>
@@ -185,7 +190,7 @@
 
       </div>
     </main>
-  </form>
+
   </body>
 
 </html>
