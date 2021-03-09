@@ -1,13 +1,4 @@
-function solotexto(txt){
-    var x = txt
-    var regxNom = new RegExp('^[A-Z]+$', 'i')
-    var valNom = regxNom.test(x)
-    if (x.length == 0 || x.length >50 || !valNom) {
-      return false;
-    }
-  
-    return (true);
-  }
+
     
 
 function imprimir(){
@@ -15,19 +6,25 @@ function imprimir(){
     var flag = new Cliente();
     flag.rut = document.getElementById('rut').value
     flag.nombre = document.getElementById('nombre').value
-    /*flag.apellido = document.getElementById('apellido').value
-    flag.direccion = document.getElementById('direccion').value*/
+    flag.apellido = document.getElementById('apellido').value
+    //flag.direccion = document.getElementById('direccion').value
 
-    
-    var res  = solotexto(flag.nombre);
-    var res2 = flag.validarRutCliente();
+    var res = flag.validarRutCliente();
+    var res2  = flag.validarNombre();
+    var res3 = flag.validarApellido();
 
-    if (res2 == true) {
-        rut.setCustomValidity("RUT valido")
-    }else{
-    rut.setCustomValidity("RUT Inválido")
+
+  
+
+    if (res == false) {
+        rut.setCustomValidity("RUT Inválido")
     }
-    
+    if (res2 == false) {
+        nombre.setCustomValidity("Nombre Inválido")
+    }
+    if (res3 == false) {
+        apellido.setCustomValidity("Apellido Inválido")
+    }
 
 
 }
