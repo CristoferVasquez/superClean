@@ -21,8 +21,6 @@ function verificar(){
     }
 
 
-    
-
    } catch (error) {
        
    }
@@ -31,9 +29,35 @@ function verificar(){
 
 }
 
+function solotexto(txt){
+    var x = txt
+    var regxNom = new RegExp('^[A-Z]+$', 'i')
+    var valNom = regxNom.test(x)
+    if (x.length == 0 || x.length >50 || !valNom) {
+      return false;
+    }
+  
+    return (true);
+  }
+    
+
 function imprimir(){
 
-    alert("estoy imprimiendo")
+    var flag = new Cliente();
+    flag.rut = document.getElementById('rut').value
+    flag.nombre = document.getElementById('nombre').value
+    flag.apellido = document.getElementById('apellido').value
+    flag.direccion = document.getElementById('direccion').value
+
+    
+    var y  = solotexto(flag.nombre);
+
+
+    if (y == true ) {
+        nombre.setCustomValidity("Nombre valido"); return true
+    }else{
+        nombre.setCustomValidity("Nombre invalido"); return true
+    }
 }
 
 
