@@ -30,6 +30,39 @@ class Cliente{
           
     }
 
+    validarNombre(){
+        
+            var x = this.nombre;
+            var regxNom = new RegExp('^[A-Z]+$', 'i')
+            var valNom = regxNom.test(x)
+            if (x.length == 0 || x.length >50 || !valNom) {
+             
+              return false;
+            }else{
+                return true;
+            }
+          
+          
+            
+          
+    }
+    validarApellido(){
+        
+        var x = this.apellido;
+        var regxNom = new RegExp('^[A-Z]+$', 'i')
+        var valNom = regxNom.test(x)
+        if (x.length == 0 || x.length >50 || !valNom) {
+         
+          return false;
+        }else{
+            return true;
+        }
+      
+      
+        
+      
+}
+
 
     
     }
