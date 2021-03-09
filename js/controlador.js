@@ -1,34 +1,3 @@
-
-function verificar(){
-    var flag = new Cliente();
-   try {
-
-    flag.rut = document.getElementById('rut').value
-    flag.nombre = document.getElementById('nombre').value
-    flag.apellido = document.getElementById('apellido').value
-    flag.direccion = document.getElementById('direccion').value
-
-
-    if (flag.rut.length != 0) {
-        let res = flag.validarRutCliente();
-        if (res == true) {
-            rut.setCustomValidity("RUT valido"); return true
-        }else{
-        rut.setCustomValidity("RUT Inválido"); return false
-        }
-    }else{
-        rut.setCustomValidity("Favor ingrese su rut"); return false
-    }
-
-
-   } catch (error) {
-       
-   }
-      
-
-
-}
-
 function solotexto(txt){
     var x = txt
     var regxNom = new RegExp('^[A-Z]+$', 'i')
@@ -46,18 +15,21 @@ function imprimir(){
     var flag = new Cliente();
     flag.rut = document.getElementById('rut').value
     flag.nombre = document.getElementById('nombre').value
-    flag.apellido = document.getElementById('apellido').value
-    flag.direccion = document.getElementById('direccion').value
+    /*flag.apellido = document.getElementById('apellido').value
+    flag.direccion = document.getElementById('direccion').value*/
 
     
-    var y  = solotexto(flag.nombre);
+    var res  = solotexto(flag.nombre);
+    var res2 = flag.validarRutCliente();
 
-
-    if (y == true ) {
-        nombre.setCustomValidity("Nombre valido"); return true
+    if (res2 == true) {
+        rut.setCustomValidity("RUT valido")
     }else{
-        nombre.setCustomValidity("Nombre invalido"); return true
+    rut.setCustomValidity("RUT Inválido")
     }
+    
+
+
 }
 
 
