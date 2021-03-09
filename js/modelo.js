@@ -1,10 +1,6 @@
 class Cliente{
     constructor(){
-        this.rut = document.getElementById('rut').value;/*
-        this.nombre = document.getElementById('nombre').value;
-        this.apellido = document.getElementById('apellido').value;
-        this.direccion = document.getElementById('direccion').value;
-        this.comuna = document.getElementById('comuna').value; */      
+   
     }
 
     validarRutCliente(){
@@ -35,7 +31,27 @@ class Cliente{
        
     }
 
-    
+    validarText(txt){
+        var txt = txt;
+        var regxNom = new RegExp('^[A-Z]+$', 'i')
+        var valNom = regxNom.test(nombre)
+        if (nombre.length == 0 || nombre.length >50 || !valNom) {
+          alert("El nombre indicado es incorrecto!");
+          document.formularioContacto.nombre.focus();
+          return false;
+        }
+    }
+
+    validarDire(direccion){
+
+        var txt = direccion;
+        var regxNom = new RegExp('^[A-Z]+$', 'i')
+        var valNom = regxNom.test(nombre)
+        if (nombre.length == 0 || nombre.length >100 || !valNom) {
+          alert("El nombre indicado es incorrecto!");
+          document.formularioContacto.nombre.focus();
+          return false;
+        }
 
 }
 
