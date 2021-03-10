@@ -30,7 +30,8 @@
 
     <main class="container-fluid d-flex align-items-center justify-content-center alto-100">
 
-      <form >
+      <form action="respuesta.html" method="GET">
+        
       
       <div class="row">
         <div class="page-header p-3 mb-2 bg-dark text-white">
@@ -67,10 +68,10 @@
             <div class="row">
               <div class="col-4"></div>
               <div class="col-4"> 
-                <input type="text" class="form-control" id="direccion" placeholder="Direccion">
+                <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Direccion">
               </div>
               <div class="col-4">
-                <input type="text" class="form-control" id="comuna" placeholder="Comuna">
+                <input type="text" class="form-control" name="comuna" id="comuna" placeholder="Comuna">
               </div>
               
             </div>
@@ -91,30 +92,30 @@
               <div class="col-12"><p></p></div>
               <div class="col-4">
                 <label for="tipoVehiculo">Tipo de Vehiculo</label>
-                <select id="tipoVehiculo" class="form-control">
+                <select id="tipoVehiculo" name="tipoVehiculo" class="form-control">
                   <option selected>Eliga una opcion</option>
-                  <option value="1">Furgón</option>
-                  <option value="2">Automóvil</option>
-                  <option value="3">Camión</option>
-                  <option value="5">Camioneta </option>
-                  <option value="6">Moto</option>
+                  <option value="Furgón">Furgón</option>
+                  <option value="Automóvil">Automóvil</option>
+                  <option value="Camión">Camión</option>
+                  <option value="Camioneta">Camioneta </option>
+                  <option value="Moto">Moto</option>
                 </select> 
                 </div>
 
              <div class="col-12"><p></p></div>
            
               <div class="col-6">
-                <input type="text" class="form-control" id="marca" placeholder="Marca">
+                <input type="text" class="form-control" name="marca" id="marca" placeholder="Marca">
               </div>
               <div class="col-6">
-                <input type="text" class="form-control" id="modelo"placeholder="Modelo">
+                <input type="text" class="form-control" name="modelo" id="modelo"placeholder="Modelo">
               </div>  
             
               <div class="col-12"><p></p></div>
             
               
               <div class="col-3">
-                <input type="text" class="form-control" placeholder="Año">
+                <input type="text" class="form-control" id="año" name="año"placeholder="Año">
               </div>         
               <div class="col-6">
                 <div class="form-check">
@@ -143,32 +144,26 @@
               <col-12><p></p></col-12>
             </div>
             <div class="row">
-              <div class="col-12">Datos de la venta</div>
-              <div class="col-12"><p></p></div>
+              <div class="col-12"><p>Encargado de la venta</p></div>
               <div class="col-5">
-                <label for="tipoVehiculo">Encargado de la venta</label>
-                <select id="tipoVehiculo" class="form-control">
-                  <option selected>Quien es usted ?</option>
-                  <option value="1">Andres Cienfuentes</option>
-                  <option value="2">Gabriel Fuenzalida</option>
-                  <option value="3">Ana Cariman</option>
-                  <option value="5">Violeta Guerra</option>
-                  <option value="6">Camilo Quiroga</option>
+                <select id="encargado" name ="encargado"class="form-control">
+                  <option value="no" selected>Quien es usted ?</option>
+                  <option value="Andres Cienfuentes">Andres Cienfuentes</option>
+                  <option value="Gabriel Fuenzalida">Gabriel Fuenzalida</option>
+                  <option value="Ana Cariman">Ana Cariman</option>
+                  <option value="Violeta Guerra">Violeta Guerra</option>
+                  <option value="Camilo Quiroga">Camilo Quiroga</option>
                 </select> 
                 </div>
               <div class="col-7">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="1" id="labBasico">
-                  <label class="form-check-label" for="revTecnica">
-                    Lavado Basico ($5000)
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="2" id="labProfundo">
-                  <label class="form-check-label" for="revTecnica">
-                    Lavado Profundo ($8000)
-                  </label>
-                </div>
+               
+                <select id="servicio" name="servicio"class="form-control">
+                  <option value="no" selected>Tipo de Servicio</option>
+                  <option value="5000">Limpieza Basica</option>
+                  <option value="8000">Limpieza Profunda</option>
+
+                </select> 
+
               </div>
             </div>
             <div class="row">
