@@ -1,12 +1,23 @@
 class Cliente{
     constructor(){
-   
     }
 
-    validarRutCliente(){
+    crearCliente(){
+        try {
+            this.rut = document.getElementById('rut').value
+            this.nombre = document.getElementById('nombre').value
+            this.apellido = document.getElementById('apellido').value
+            this.direccion = document.getElementById('direccion').value
+            
+        } catch (error) {
+            alert("llene todo")
+        }
 
+    }
+
+    validarRut(){
         var Fn = {
-	
+
             validaRut : function (rutCompleto) {
                 if (!/^[0-9]+[-|‐]{1}[0-9kK]{1}$/.test( rutCompleto ))
                     return false;
@@ -25,59 +36,66 @@ class Cliente{
         }
        
        let validar =  Fn.validaRut(this.rut) ? true : false;
-
-      return validar;
-          
-    }
-
-    validarNombre(){
-        
-            var x = this.nombre;
-            var regxNom = new RegExp('^[A-Z]+$', 'i')
-            var valNom = regxNom.test(x)
-            if (x.length == 0 || x.length >50 || !valNom) {
-             
-              return false;
-            }else{
-                return true;
-            }
-          
-          
-            
-          
-    }
-    validarApellido(){
-        
-        var x = this.apellido;
-        var regxNom = new RegExp('^[A-Z]+$', 'i')
-        var valNom = regxNom.test(x)
-        if (x.length == 0 || x.length >50 || !valNom) {
-         
-          return false;
-        }else{
-            return true;
-        }
-      
-      
-        
-      
-}
-
-
     
+      return validar;
     }
+
+}
 
 
 
 class Vehiculo{
     constructor(patente){
-        this.patente = patente;
     }
+    crearVehiculo(){
+        try {
+
+            this.marca = document.getElementById('marca').value
+            this.modelo = document.getElementById('modelo').value
+            this.año = document.getElementById('año').value
+            
+        } catch (error) {
+            alert("llene todo")
+        }
+    }
+
+    validarAño(){
+
+        var regxNom = new RegExp('^[0-9]+$', 'i')
+        var valNom = regxNom.test(this.año)
+        if (this.año == 0 || (this.año < 1900  && this.año >2021)||  !valNom) {
+     
+            return false;
+          }else{
+              return true;
+          }
+    }
+
+
 }
 
 class Venta{
-    constructor(vehiculo,cliente){
-        this.vehiculo = vehiculo;
-        this.cliente = cliente;
+    constructor(){
+      
     }
+
+  
+
+    generarVenta(txt){
+
+    try {
+    this.encargado = document.getElementById('encargado').value
+    this.precio =  document.getElementById('servicio').value
+    let precioFinal = this.precio+this.precio*(0.19);
+    return(txt+"\n------------------------------\nUsted a sido atendido por : "+this.encargado+"\nPago total"+precioFinal)
+  
+
+} catch (error) {
+    
+}
+
+    }
+
+  
+
 }
